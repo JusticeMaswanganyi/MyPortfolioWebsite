@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+
+    <section id="home">
+        <p class="welcome-message">Welcome to my portfolio</p>
+        <h1>Justice Maswanganyi</h1>
+    </section>
+
+    <section id="about" class="hidden">
+        <h2>About Me</h2>
+        <p>I am a student learning programming and building systems using Python, C++, C#, and Java. I enjoy building projects that solve real problems, like booking systems and management systems for schools.</p>
+    </section>
+
+    <section id="resume" class="hidden">
+        <h2>Resume / CV</h2>
+        <p>You can download my full CV below, or read a quick summary here.</p>
+        <p>I am currently a student building my skills in software development, with a focus on backend systems and problem solving using multiple programming languages.</p>
+
+        <a href="Curriculum Vitae (CV).pdf" class="resume-button" download>Download My CV</a>
+    </section>
+
+    <section id="skills" class="hidden">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">C#</div>
+            <div class="skill-card">Java</div>
+        </div>
+    </section>
+
+    <section id="projects" class="hidden">
+        <h2>My Projects</h2>
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Tutor Booking System</h3>
+                <p>A system that lets students book a tutor based on available time slots. Tutors can approve or manage the bookings they receive.</p>
+                <p class="tech-used">Built with: HTML, CSS, JavaScript</p>
+                <a href="#">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>University Management System</h3>
+                <p>A system that allows lecturers to share information and send announcements to students. Students can view announcements, check their marks, and the system can generate academic records.</p>
+                <p class="tech-used">Built with: ASP.NET (Visual Studio)</p>
+                <a href="#">View on GitHub</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact Me</h2>
+        <p>Email: justicemaswanganyi85@gmail.com</p>
+        <p>Phone: 064 677 7471</p>
+        <p><a href="https://www.linkedin.com/in/justice-maswanganyi-229b67368">LinkedIn Profile</a></p>
+        <p><a href="https://github.com/JusticeMaswanganyi">GitHub Profile</a></p>
+    </section>
+
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
