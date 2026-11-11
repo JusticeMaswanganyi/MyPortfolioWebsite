@@ -3,90 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="theme-color" content="#090b16">
+    <title>Justice Maswanganyi | Software Developer</title>
+    <meta name="description" content="Justice Maswanganyi is a student developer building booking and management systems with Python, C++, C#, Java and web technologies.">
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Justice Maswanganyi, home"><span class="brand-mark">J</span><span>justice<span class="brand-dot">.</span></span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">CV</a></li>
+                <li><a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch theme">☼</button>
+        </nav>
+    </header>
 
-    <nav>
-        <h2>My Portfolio</h2>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+            <div class="hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="status-dot"></span> STUDENT DEVELOPER</p>
+                    <p class="welcome-message">Hello, I'm</p>
+                    <h1>Justice<br><span>Maswanganyi.</span></h1>
+                    <p class="headline">I build digital experiences and practical systems that make everyday tasks easier.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
+                        <a href="Justice-Maswanganyi-CV.pdf" class="btn btn-secondary" download>Download CV <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/JusticeMaswanganyi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <a href="https://www.linkedin.com/in/justice-maswanganyi-229b67368" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-
-        <ul id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-    </nav>
-
-    <section id="home">
-        <p class="welcome-message">Welcome to my portfolio</p>
-        <h1>Justice Maswanganyi</h1>
-    </section>
-
-    <section id="about" class="hidden">
-        <h2>About Me</h2>
-        <p>I am a student learning programming and building systems using Python, C++, C#, and Java. I enjoy building projects that solve real problems, like booking systems and management systems for schools.</p>
-    </section>
-
-    <section id="resume" class="hidden">
-        <h2>Resume / CV</h2>
-        <p>You can download my full CV below, or read a quick summary here.</p>
-        <p>I am currently a student building my skills in software development, with a focus on backend systems and problem solving using multiple programming languages.</p>
-
-        <a href="Curriculum Vitae (CV).pdf" class="resume-button" download>Download My CV</a>
-    </section>
-
-    <section id="skills" class="hidden">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">Python</div>
-            <div class="skill-card">C++</div>
-            <div class="skill-card">C#</div>
-            <div class="skill-card">Java</div>
-        </div>
-    </section>
-
-    <section id="projects" class="hidden">
-        <h2>My Projects</h2>
-        <div class="project-container">
-
-            <div class="project-card">
-                <h3>Tutor Booking System</h3>
-                <p>A system that lets students book a tutor based on available time slots. Tutors can approve or manage the bookings they receive.</p>
-                <p class="tech-used">Built with: HTML, CSS, JavaScript</p>
-                <a href="#">View on GitHub</a>
+                <div class="hero-visual">
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+                    <div class="profile-photo-frame">
+                        <img src="justice-profile.jpg" alt="Portrait of Justice Maswanganyi" class="profile-photo">
+                    </div>
+                    <div class="floating-chip chip-python"><span class="chip-icon">Py</span> Python</div>
+                    <div class="floating-chip chip-java"><span class="chip-icon">J</span> Java</div>
+                    <div class="floating-chip chip-code"><span class="chip-icon">&lt;/&gt;</span> Problem solving</div>
+                    <div class="visual-caption"><span class="caption-line"></span><span>Turning ideas into working solutions</span></div>
+                </div>
             </div>
+            <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+        </section>
 
-            <div class="project-card">
-                <h3>University Management System</h3>
-                <p>A system that allows lecturers to share information and send announcements to students. Students can view announcements, check their marks, and the system can generate academic records.</p>
-                <p class="tech-used">Built with: ASP.NET (Visual Studio)</p>
-                <a href="#">View on GitHub</a>
+        <section id="about" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>Curious mind.<br><span class="gradient-text">Practical builder.</span></h2>
             </div>
+            <div class="about-grid">
+                <div class="about-intro">
+                    <p class="lead">I'm a student learning programming and building systems in Python, C++, C#, and Java. I enjoy working on projects that solve real problems, especially booking and management systems.</p>
+                    <p class="muted-copy">I’m focused on improving my problem-solving skills, learning how software works behind the scenes, and turning what I learn into useful projects.</p>
+                </div>
+                <div class="about-note">
+                    <span class="note-symbol">✳</span>
+                    <p class="note-label">MY APPROACH</p>
+                    <h3>Learn by building.</h3>
+                    <p>I believe the best way to grow as a developer is to keep experimenting, solving problems and creating things that people can use.</p>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="skills" class="section section-alt reveal">
+            <div class="section-heading">
+                <p class="eyebrow">TOOLS I WORK WITH</p>
+                <h2>My <span class="gradient-text">toolkit.</span></h2>
+                <p class="section-description">Technologies I'm learning and using to bring ideas to life.</p>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-group">
+                    <div class="skill-group-top"><span class="skill-number">01</span><span class="skill-symbol">&lt;/&gt;</span></div>
+                    <h3>Programming languages</h3>
+                    <div class="skill-list"><span>Python</span><span>C++</span><span>C#</span><span>Java</span></div>
+                </article>
+                <article class="skill-group">
+                    <div class="skill-group-top"><span class="skill-number">02</span><span class="skill-symbol">◈</span></div>
+                    <h3>Web development</h3>
+                    <div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>ASP.NET</span></div>
+                </article>
+            </div>
+        </section>
 
-    <section id="contact" class="hidden">
-        <h2>Contact Me</h2>
-        <p>Email: justicemaswanganyi85@gmail.com</p>
-        <p>Phone: 064 677 7471</p>
-        <p><a href="https://www.linkedin.com/in/justice-maswanganyi-229b67368">LinkedIn Profile</a></p>
-        <p><a href="https://github.com/JusticeMaswanganyi">GitHub Profile</a></p>
-    </section>
+        <section id="projects" class="section reveal">
+            <div class="section-heading projects-heading">
+                <div><p class="eyebrow">WHAT I'VE BEEN WORKING ON</p><h2>Selected <span class="gradient-text">projects.</span></h2></div>
+                <span class="project-count">02 PROJECTS</span>
+            </div>
+            <div class="project-container">
+                <article class="project-card">
+                    <div class="project-topline"><span>01 / BOOKING</span><span class="project-arrow">↗</span></div>
+                    <div class="project-art booking-art" aria-hidden="true">
+                        <div class="mini-window">
+                            <div class="mini-window-bar"><i></i><i></i><i></i><span>booking.app</span></div>
+                            <div class="calendar-layout"><div class="calendar-side"><b></b><b></b><b></b></div><div class="calendar-main"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+                        </div>
+                    </div>
+                    <h3>Tutor Booking System</h3>
+                    <p>Students can book tutors based on available time slots, while tutors can approve and manage the bookings they receive.</p>
+                    <div class="challenge"><strong>Problem solved</strong><span>Preventing two students from booking the same time slot.</span></div>
+                    <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                    <a class="project-link" href="https://github.com/JusticeMaswanganyi" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a>
+                </article>
 
-    <button id="backToTop" aria-label="Back to top">↑</button>
+                <article class="project-card">
+                    <div class="project-topline"><span>02 / MANAGEMENT</span><span class="project-arrow">↗</span></div>
+                    <div class="project-art management-art" aria-hidden="true">
+                        <div class="dashboard-window">
+                            <div class="dashboard-sidebar"><b></b><i></i><i></i><i></i><i></i></div>
+                            <div class="dashboard-content"><span></span><div class="dashboard-cards"><i></i><i></i><i></i></div><div class="dashboard-chart"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+                        </div>
+                    </div>
+                    <h3>University Management System</h3>
+                    <p>Lecturers share information and announcements. Students view announcements and marks, and the system generates academic records.</p>
+                    <div class="challenge"><strong>Problem solved</strong><span>Keeping lecturer and student access separate.</span></div>
+                    <ul class="tags"><li>ASP.NET</li><li>C#</li><li>Visual Studio</li></ul>
+                    <a class="project-link" href="https://github.com/JusticeMaswanganyi" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a>
+                </article>
+            </div>
+            <p class="projects-note">More projects and experiments will be added as I continue learning.</p>
+        </section>
 
+        <section id="resume" class="section resume-section reveal">
+            <div class="resume-panel">
+                <div><p class="eyebrow">WANT TO KNOW MORE?</p><h2>Take a look at<br><span class="gradient-text">my CV.</span></h2><p class="muted-copy">Explore my background, skills and learning journey in more detail.</p></div>
+                <a href="Curriculum Vitae (CV).pdf" class="btn btn-primary" download>Download my CV <span aria-hidden="true">↓</span></a>
+                <span class="resume-decoration" aria-hidden="true">CV</span>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section reveal">
+            <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+            <h2>Let's make something<br><span class="gradient-text">meaningful.</span></h2>
+            <p class="contact-intro">I'm open to internships, junior opportunities and collaborations. Feel free to get in touch.</p>
+            <a class="contact-email" href="mailto:justicemaswanganyi85@gmail.com">justicemaswanganyi85@gmail.com <span>↗</span></a>
+            <div class="contact-details">
+                <a href="tel:+27646777471">064 677 7471</a>
+                <span class="detail-divider"></span>
+                <a href="https://www.linkedin.com/in/justice-maswanganyi-229b67368" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="https://github.com/JusticeMaswanganyi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#home">justice<span>.</span></a><p>Designed & built by Justice Maswanganyi</p><p>© <span id="year">2026</span> All rights reserved.</p></footer>
+    <button id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
     <script src="script.js"></script>
 </body>
 </html>
